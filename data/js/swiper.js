@@ -1,9 +1,8 @@
+const Swiper = require('swiper').default;
 
-// export function getSwiper() {
-//     return new Swiper('.swiper-container', {
-//         navigation: {
-//             nextEl: '.swiper-button-next',
-//             prevEl: '.swiper-button-prev',
-//         },
-//     });
-// };
+const swiper = new Swiper('.swiper-container', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
