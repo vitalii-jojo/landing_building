@@ -1,7 +1,7 @@
 //swiper import
-
-
-
+// import { getSwiper } from './swiper.js';
+// const swiper = getSwiper();
+// 
 
 function tabs(tabsBlockselector) {
   const tabsAll = document.querySelectorAll(tabsBlockselector + " [data-tab]");
