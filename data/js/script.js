@@ -1,3 +1,8 @@
+//swiper import
+
+
+
+
 function tabs(tabsBlockselector) {
   const tabsAll = document.querySelectorAll(tabsBlockselector + " [data-tab]");
   const contentAll = document.querySelectorAll(
