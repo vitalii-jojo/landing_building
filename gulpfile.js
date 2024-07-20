@@ -6,7 +6,6 @@ const uglify = require("gulp-uglify-es").default;
 const browserSync = require("browser-sync").create();
 const autoprefixer = require("gulp-autoprefixer");
 
-
 function styles() {
   return (
     src("data/styles/*.scss")
@@ -36,6 +35,7 @@ function scripts() {
 
 function watching() {
   watch(["data/styles/*.scss"], styles);
+  watch(["data/styles/main/*.scss"], styles);
   watch(["data/js/*.js"], scripts);
   watch(["./*.html"]).on("change", browserSync.reload);
 }

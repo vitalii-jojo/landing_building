@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./app/css/style.min.css">
+    <link rel="stylesheet" href="./app/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -32,6 +36,30 @@
         <section class="section section--hero">
           <div class="container container--hero">
             <h1 class="hero_title">Building things is our mission.</h1>
+            <div class="feature mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div>Feature Projects</div>
+                  <div>The National University of Architecture</div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+              </div>
+              <div class="nav_wrap">
+                <div class="feature-prev">Back</div>
+                <div class="feature-next">Next</div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -153,7 +181,10 @@
               </nav>
 
               <div class="tabs__content">
-                <div data-tab-content id="tab_1" class="tabs__content_item active"
+                <div
+                  data-tab-content
+                  id="tab_1"
+                  class="tabs__content_item active"
                 >
                   <div class="img_w">
                     <img class="img_prg" src="./data/img/1.png" alt="" />
@@ -267,6 +298,8 @@
         </section>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./app/js-min/script.min.js"></script>
   </body>
 </html>
