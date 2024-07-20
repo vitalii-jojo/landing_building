@@ -5,10 +5,11 @@
     background-position: 50%;
     width: 100%;
     min-height: 646px;
-    position: relative;
+
   }
   .container--hero {
     max-width: 1276px;
+    position: relative;
   }
   .hero_title {
     font-family: Work Sans;
@@ -28,8 +29,8 @@
     max-width: 416px;
     height: 150px;
     position: absolute;
-    bottom: 40px;
-    right: 0px;
+    bottom: -200px;
+    right: -30px;
   }
  .swiper-wrapper {
   height: 150px;
