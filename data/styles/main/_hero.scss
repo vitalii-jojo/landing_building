@@ -72,7 +72,7 @@
   }
 
   .feature-next::after {
-    content: url(/data/img/arrow-next.svg);
+    content: url(../../data/img/arrow-next.svg);
     display: inline-block;
     width: 2.6rem;
     height: 1.7rem;
@@ -80,7 +80,7 @@
     left: 1rem;
   }
   .feature-prev::before {
-    content: url(/data/img/arrow-prev.svg);
+    content: url(../../img/arrow-prev.svg);
     display: inline-block;
     width: 2.6rem;
     height: 1.7rem;
