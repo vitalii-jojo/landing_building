@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: 50%;
     width: 100%;
-    min-height: 646px;
+    min-height: 64.6rem;
 
   }
   .container--hero {
@@ -13,12 +13,12 @@
   }
   .hero_title {
     font-family: Work Sans;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-weight: 600;
-    line-height: 84.46px;
+    line-height: 8.4rem;
     text-align: left;
-    max-width: 668px;
-    padding-top: 238px;
+    max-width: 66.8rem;
+    padding-top: 23.8rem;
     // padding-left: 112px;
     color: #292e3d;
   }
@@ -26,14 +26,14 @@
 
   // ------
   .feature {
-    max-width: 416px;
-    height: 150px;
+    max-width: 41.6rem;
+    height: 15rem;
     position: absolute;
-    bottom: -200px;
-    right: -30px;
+    bottom: -20rem;
+    right: -3rem;
   }
  .swiper-wrapper {
-  height: 150px;
+  height: 15rem;
   width: 100%;
  }
   .swiper-slide {
@@ -43,14 +43,14 @@
   .nav_wrap {
     display: flex;
     flex-wrap: nowrap;
-    max-width: 416px;
-    height: 40px;
+    max-width: 41.6rem;
+    height: 4rem;
   }
   .feature-next, .feature-prev {
   font-family: Work Sans;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 21.11px;
+  line-height: 2.1rem;
     width: 100%;
 
     background: #292E3D;
@@ -61,22 +61,22 @@
     justify-content: center;
   }
   .feature-prev {
-    border-right:  1px solid white;
+    border-right:  0.1rem solid white;
   }
 
   .feature-next::after {
     content: url(/data/img/arrow-next.svg);
     display: inline-block;
-    width: 26px;
-    height: 17px;
+    width: 2.6rem;
+    height: 1.7rem;
     position: relative;
-    left: 10px;
+    left: 1rem;
   }
   .feature-prev::before {
     content: url(/data/img/arrow-prev.svg);
     display: inline-block;
-    width: 26px;
-    height: 17px;
+    width: 2.6rem;
+    height: 1.7rem;
     position: relative;
-    right: 10px;
+    right: 1rem;
   }

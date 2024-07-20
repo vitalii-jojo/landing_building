@@ -3,60 +3,8 @@
 @import "./main/base";
 @import "./main/header";
 @import "./main/hero";
+@import "./main/reputation";
 
-/* _________________ */
-
-.container--reputation {
-  max-width: 1080px;
-  width: 100%;
-}
-.section_title {
-  font-family: Work Sans;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42.23px;
-
-  color: #292e3d;
-  margin-bottom: 40px;
-}
-.reputations_w {
-  width: 100%;
-  display: flex;
-  column-gap: 70px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.rep {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: 18px;
-  border: 1.4px solid #e0e3eb;
-  min-height: 200px;
-  padding-left: 20px;
-  cursor: pointer;
-  width: calc((100% - 2 * 70px) / 3);
-}
-.rep__img {
-  width: 40px;
-  height: 40px;
-}
-.rep__title {
-  font-family: Work Sans;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.46px;
-  text-align: left;
-  color: #3d445c;
-}
-.rep__text {
-  font-family: Work Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18.77px;
-  text-align: left;
-  color: #858ead;
-}
 /* _________________ */
 
 .container--about {

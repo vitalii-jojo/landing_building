@@ -1,0 +1,53 @@
+
+
+.container--reputation {
+  max-width: 108rem;
+  width: 100%;
+}
+.section_title {
+  font-family: Work Sans;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4.2rem;
+
+  color: #292e3d;
+  margin-bottom: 4rem;
+}
+.reputations_w {
+  width: 100%;
+  display: flex;
+  column-gap: 7rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.rep {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1.8rem;
+  border: 1.4px solid #e0e3eb;
+  min-height: 20rem;
+  padding-left: 20px;
+  cursor: pointer;
+  width: calc((100% - 2 * 7rem) / 3);
+}
+.rep__img {
+  width: 4rem;
+  height: 4rem;
+}
+.rep__title {
+  font-family: Work Sans;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-align: left;
+  color: #3d445c;
+}
+.rep__text {
+  font-family: Work Sans;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  text-align: left;
+  color: #858ead;
+}
