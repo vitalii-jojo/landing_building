@@ -39,6 +39,13 @@
   .swiper-slide {
     width: 100%;
     background-color: #3559C7;
+    
+    &.one {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 2rem;
+    }
   }
   .nav_wrap {
     display: flex;
@@ -79,4 +86,21 @@
     height: 1.7rem;
     position: relative;
     right: 1rem;
+  }
+
+  .feature_title {
+font-family: Work Sans;
+font-size: 2rem;
+font-weight: 700;
+line-height: 2.3rem;
+text-align: center;
+color: #FFFFFF;
+  }
+  .feature_desc{
+  font-family: Work Sans;
+font-size: 2.4rem;
+font-weight: 400;
+line-height: 2.8rem;
+text-align: center;
+color: #FFFFFF;
   }

@@ -32,3 +32,20 @@
     height: 100%;
     display: block;
   }
+  .menu {
+    display: flex;
+    column-gap: 5rem;
+
+    a {
+font-family: Work Sans;
+font-size: 1.8rem;
+font-weight: 400;
+line-height: 2.1rem;
+color: #14171F;
+text-decoration: none;
+
+      &.act {
+        color:#F9995D;
+      }
+    }
+  }
