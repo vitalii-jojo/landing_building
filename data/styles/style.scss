@@ -1,87 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap";
+@import "./reset";
+@import "./main/base";
+@import "./main/header";
+@import "./main/hero";
 
-body,
-html {
-  height: 100%;
-}
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  max-width: 100%;
-}
-.section {
-  padding: 100px 0;
-  width: 100%;
-}
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-
-/* HEADER */
-.header {
-  width: 100%;
-}
-.container--header {
-  display: flex;
-  align-items: center;
-  max-width: 1276px;
-  min-height: 80px;
-  justify-content: space-between;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  max-width: 167px;
-  column-gap: 14px;
-}
-.logo__cube {
-  display: block;
-  width: 38px;
-  height: 48px;
-  object-fit: contain;
-}
-.logo__box {
-  display: block;
-  width: 111px;
-  height: 35px;
-  object-fit: contain;
-}
-img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-/* MAIN */
-.main {
-  flex-grow: 1;
-  width: 100%;
-}
-/* _________________ */
-.section--hero {
-  padding-top: 0px;
-  background: url(../../img/Hero.svg);
-  background-size: cover;
-  background-position: 50%;
-  width: 100%;
-  min-height: 646px;
-}
-.container--hero {
-  max-width: 1276px;
-}
-.hero_title {
-  font-family: Work Sans;
-  font-size: 72px;
-  font-weight: 600;
-  line-height: 84.46px;
-  text-align: left;
-  max-width: 668px;
-  padding-top: 238px;
-  padding-left: 112px;
-  color: #292e3d;
-}
 /* _________________ */
 
 .container--reputation {
@@ -204,7 +126,7 @@ img {
 }
 /* ______ */
 .section--cont {
-  background: url(../../img/unsplash_MP0bgaS_d1c.svg);
+  background: url(/data/img/unsplash_MP0bgaS_d1c.svg);
   min-height: 300px;
   background-size: cover;
   background-position: 50%;
@@ -371,11 +293,7 @@ img {
   text-align: left;
   color: #a3aac2;
 }
-/* .form__input::-webkit-inner-spin-button,
-.form__input::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} */
+
 .form__input,
 .form__select,
 #message {
@@ -416,7 +334,7 @@ img {
 }
 .form__select {
   appearance: none;
-  background: white url(../../img/contavting.svg) no-repeat right 12px center /
+  background: white url(/data/img/contavting.svg) no-repeat right 12px center /
     20px 20px;
 }
 input:invalid,

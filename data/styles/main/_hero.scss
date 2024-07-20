@@ -1,0 +1,22 @@
+.section--hero {
+    padding-top: 0px;
+    background: url(/data/img/Hero.svg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    min-height: 646px;
+  }
+  .container--hero {
+    max-width: 1276px;
+  }
+  .hero_title {
+    font-family: Work Sans;
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 84.46px;
+    text-align: left;
+    max-width: 668px;
+    padding-top: 238px;
+    padding-left: 112px;
+    color: #292e3d;
+  }
