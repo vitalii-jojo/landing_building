@@ -1,0 +1,131 @@
+.container--projects {
+    max-width: 1276px;
+  }
+  
+  .tabs_w {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project__btn_w {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: flex-start;
+  }
+  .prg_btn {
+    color: #c2c7d6;
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.15px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+  }
+  .prg_btn.activeb {
+    color: #2947a9;
+    position: relative;
+  }
+  .prg_btn.activeb::before {
+    background-color: #2947a9;
+    content: "";
+    width: 5px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: -16px;
+  }
+  /* swiper */
+  
+ .cont_w {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+ }
+ .nav_wrap2 {
+    display: flex;
+    flex-wrap: nowrap;
+    // max-width: 41.6rem;
+    height: 4rem;
+    column-gap: 1px;
+  }
+
+ .swiper-button-next2, .swiper-button-prev2 {
+    font-family: Work Sans;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+      width: 50%;
+  
+      background: #292E3D;
+      cursor: pointer;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .swiper-button-next2::after {
+      content: url(../../data/img/arrow-next.svg);
+      display: inline-block;
+      width: 2.6rem;
+      height: 1.7rem;
+      position: relative;
+      left: 1rem;
+    }
+    .swiper-button-prev2::before {
+      content: url(../../data/img/arrow-prev.svg);
+      display: inline-block;
+      width: 2.6rem;
+      height: 1.7rem;
+      position: relative;
+      right: 1rem;
+    }
+  
+  /* content tabs */
+  .tabs__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .tabs__content_item {
+    max-width: 348px;
+    // width: calc((80% - 32px) / 2);
+  }
+  .tabs__content_item.active {
+    opacity: 1;
+  }
+  
+  .img_w {
+    max-width: 348px;
+    width: 100%;
+    display: block;
+  }
+  .text_w {
+    background-color: #2947a9;
+    color: white;
+    max-width: 348px;
+    min-height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12px;
+  }
+  .img_prg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .itm__text {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.46px;
+    text-align: left;
+  }
+  .itm__text_loc {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.11px;
+    text-align: left;
+  }

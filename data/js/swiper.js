@@ -1,4 +1,4 @@
-    var swiper = new Swiper(".mySwiper", {
+    var swiper1 = new Swiper(".mySwiper", {
       effect: "flip",
       grabCursor: true,
       loop: true,

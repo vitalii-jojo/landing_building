@@ -45,14 +45,14 @@
   width: 100%;
  }
   .swiper-slide {
-    width: 100%;
-    background-color: #3559C7;
     
     &.one {
       display: flex;
       justify-content: center;
       flex-direction: column;
       row-gap: 2rem;
+      background-color: #3559C7;
+      width: 100%;
     }
   }
   .nav_wrap {

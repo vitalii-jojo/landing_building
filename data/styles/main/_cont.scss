@@ -38,16 +38,18 @@ color: white;
 
 .contact_btn {
 display: inline-block;
-max-width: 232px;
-min-height: 53px;
-
+max-width: 23.2rem;
+min-height: 5.3rem;
+padding: 1.6rem 2rem;
 border-radius: 2px;
 border: 2px solid #FFFFFF;
 
 font-family: Work Sans;
-font-size: 18px;
+font-size: 1.8rem;
 font-weight: 600;
-line-height: 21.11px;
+line-height: 2.11rem;
 text-align: center;
 color: white;
+white-space: nowrap;
+text-decoration: none;
 }
