@@ -3,11 +3,11 @@ var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 30,
     loop: false,
     pagination: {
-      el: ".pagination",
+      el: ".Pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next2",
-      prevEl: ".swiper-button-prev2",
+      nextEl: ".SwiperBtnNext",
+      prevEl: ".SwiperBtnPrev",
     },
   });
