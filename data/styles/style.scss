@@ -1,5 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap";
 @import "./reset";
+@import './variables';
+@import './extends';
 @import "./main/base";
 @import "./main/header";
 @import "./main/hero";
@@ -7,7 +9,11 @@
 @import "./main/_cont";
 @import "./main/_projects";
 
+
+
+
 /* _________________ */
+
 
 .container--about {
   max-width: 1276px;
@@ -163,18 +169,8 @@
   color: red;
 }
 .form__btn {
-  display: inline-block;
-  background-color: #2947a9;
-  color: white;
-  width: 271px;
-  min-height: 53px;
-  padding: 16px 20px 16px 20px;
-  border-radius: 2px 0px 0px 0px;
-  font-family: Work Sans;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 21.11px;
-  text-align: center;
+  @extend %blue_btn;
+  width: 100%;
   margin: 0 auto;
 }
 .form__select {

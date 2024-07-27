@@ -1,0 +1,38 @@
+@mixin btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+@mixin size ($width, $height, $Fsize, $Fweight, $Lheight) {
+    max-width: $width;
+    min-height: $height; 
+    font-size: $Fsize;
+    font-weight: $Fweight;
+    line-height: $Lheight;
+}
+
+
+
+%transp_btn {
+    @include btn();
+    @include size(23.2rem, 5.3rem, 1.8rem, 600, 2.11rem);
+    color: $white;
+    padding: 1.6rem 2rem;
+    border-radius: 2px;
+    border: 2px solid $white;
+}
+
+%blue_btn {
+        @include btn();
+        @include size(27.1rem, 5.3rem, 1.8rem, 600, 2.11rem);
+        color: $white;
+        background-color: $blue;
+        padding: 1.6rem 2rem;
+        border-radius: 2px;
+
+}

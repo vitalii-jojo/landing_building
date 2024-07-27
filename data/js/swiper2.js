@@ -3,9 +3,9 @@ var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 150,
   loop: false,
 
-  mousewheel: {
-    enabled: true,
-  },
+  // mousewheel: {
+  //   enabled: true,
+  // },
 
   keyboard: {
     enabled: true,
@@ -36,7 +36,6 @@ function updateBtn() {
     } else {
       btnAll[index].classList.remove("activeb");
     }
-    console.log(tab, index);
   });
 }
 
