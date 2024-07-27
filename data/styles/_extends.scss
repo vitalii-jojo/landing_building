@@ -14,9 +14,11 @@
     font-size: $Fsize;
     font-weight: $Fweight;
     line-height: $Lheight;
+    
 }
 
 
+// -------------------
 
 %transp_btn {
     @include btn();
@@ -35,4 +37,24 @@
         padding: 1.6rem 2rem;
         border-radius: 2px;
 
+}
+
+%navigation_btn {
+
+    @include btn();
+    @include size(50%, 100%, 1.8rem, 400, 2.1rem);
+    display: flex !important;
+    color: $white;  
+    width: 50%;
+    background: #292E3D;
+}
+
+%navigation_btn2 {
+
+    @include btn();
+    @include size(29.5rem, 6.4rem, 1.8rem, 400, 2.1rem);
+    display: flex !important;
+    color: $white;  
+    width: 100%;
+    background: #292E3D;
 }
