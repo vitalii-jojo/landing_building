@@ -55,4 +55,9 @@
       line-height: 23.46px;
       text-align: left;
     }
+
+    .descr_btn {
+      @extend %white_btn;
+    }
+
   }
