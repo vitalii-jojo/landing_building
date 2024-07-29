@@ -1,17 +1,102 @@
 .container--exp {
     max-width: 108rem;
     display: flex;
-    justify-content: space-between;
+    column-gap: 15.2rem;
+    align-items: center;
+  }
+
+  .exp_highlites {
+    max-width: 58rem;
+    width: 100%;
+    height: 50.2rem;
   }
 
   .highlite {
-    max-width: 28rem;
     min-height: 15.5rem;
     padding: 3rem;
     border-radius: 4px;
+    background-color: $white;
     border: 1px solid #FFFFFF;
     box-shadow: 0px 4px 6px -2px #1118270D, 0px 12px 16px -4px #1118271A;
 
+
+    &.highlite--1 {
+        max-width: 28rem;
+
+        position: relative;
+        left: 52%;
+        z-index: 1;
+
+        &::after {
+            content: url(../../data/img/highlite1.svg);
+            width: 9.7rem;
+            height: 9.7rem;
+            display: inline-block;
+            position: absolute;
+            top: -8%;
+            left: 75%;
+        }
+    }
+    
+    &.highlite--2 {
+        max-width: 36.1rem;
+
+        position: relative;
+        left: -5%;
+        top: -17%;
+        z-index: -1;
+
+        &::after {
+            content: url(../../data/img/highlite2.svg);
+            width: 9.7rem;
+            height: 9.7rem;
+            display: inline-block;
+            position: absolute;
+            top: -18%;
+            left: -9%;
+        }
+    }
+
+
+    &.highlite--3 {
+        max-width: 27.6rem;
+
+        position: relative;
+        top: -22%;
+        left: 45%;
+        z-index: 1;
+
+        &::after {
+            content: url(../../data/img/highlite3.svg);
+            width: 9.7rem;
+            height: 9.7rem;
+            display: inline-block;
+            position: absolute;
+            top: -3%;
+            left: 75%;
+        }
+    }
+
+
+    &.highlite--4 {
+        max-width: 33.3rem;
+
+        position: relative;
+        left: 8%;
+        top: -39%;
+        z-index: -1;
+
+        &::after {
+            content: url(../../data/img/highlite4.svg);
+            width: 9.7rem;
+            height: 9.7rem;
+            display: inline-block;
+            position: absolute;
+            top: 73%;
+            left: 84%;
+
+        }
+    }
 
 
 
@@ -39,4 +124,32 @@
         left: 1.2rem;
         }
     }
+  }
+
+  .exp_w {
+    max-width: 36rem;
+    width: 100%;
+
+    .exp_title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70.38px;
+    text-align: left;
+    color: $blue;
+    padding-bottom: 4rem;
+    }
+    .exp_desc{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.46px;
+    text-align: left;
+    color: #525B7A;
+    padding-bottom: 5rem;
+    }
+    .exp_btn {
+        @extend %blue_btn
+    }
+
+
+
   }
