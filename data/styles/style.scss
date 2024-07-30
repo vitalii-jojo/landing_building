@@ -12,6 +12,34 @@
 @import "./main/experience";
 
 
+
+
+.nav_top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #2947a9;
+  border-radius: 50%;
+  position: fixed;
+  top: calc(95% - 50px);
+  left: calc(95% - 50px);
+
+  &.visible {
+    display: block;
+  }
+
+  &::after{
+  content: url(../../data/img/arrow-prev.svg);
+  display: inline-block;
+  width: 2.6rem;
+  height: 1.7rem;
+  position: relative;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%) rotate(90deg);
+  }
+}
+
 /* _________________ */
 .section--services {
   background-color: #f6f8f7;

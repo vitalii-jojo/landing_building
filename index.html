@@ -23,17 +23,17 @@
             </div>
           </div>
           <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Projects</a>
-            <a href="#">Services</a>
-            <a class="act" href="#">Contact Us</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a class="act" href="#contact">Contact Us</a>
           </div>
         </div>
       </header>
 
       <main class="main">
-        <section class="section section--hero">
+        <section id="home" class="section section--hero">
           <div class="container container--hero">
             <h1 class="hero_title">Building things is our mission.</h1>
             <div class="feature mySwiper">
@@ -100,7 +100,7 @@
           </div>
         </section>
 
-        <section class="section">
+        <section id="about" class="section">
           <div class="container container--about">
             <div class="about_img_w">
               <img class="about_img" src="./data/img/chel.png" alt="men" />
@@ -108,20 +108,21 @@
             <div class="description">
               <h1 class="desc_title">About us</h1>
               <div class="desc_text">
+                <p>
                 For more than 30 years we have been delivering world-class
                 construction and we've built many lasting relationships along
-                the way. <br />
-                <br />
+                the way. </p>
+                <p></p>
                 We've matured into an industry leader and trusted resource for
                 those seeking quality, innovation and reliability when building
-                in the U.S.
+                in the U.S.</p>
               </div>
               <a class="descr_btn" href="#">More on Our History</a>
             </div>
           </div>
         </section>
 
-        <section class="section section--services">
+        <section id="services" class="section section--services">
           <div class="container container--services">
             <h1 class="section_title">Services</h1>
             <div class="serv_w">
@@ -221,7 +222,7 @@
             <a href="#" class="contact_btn">Get your consultation</a>
           </div>
         </section>
-        <section class="section">
+        <section id="projects" class="section">
           <div class="container container--projects">
             <h1 class="section_title">Projects</h1>
             <div class="tabs_w tab1">
@@ -431,7 +432,7 @@
           </div>
         </section>
 
-        <section class="section srction--form">
+        <section id="contact" class="section srction--form">
           <div class="container container--form">
             <div class="form__text">
               <h1 class="text__title">What can us do for you?</h1>
@@ -474,6 +475,8 @@
             </form>
           </div>
         </section>
+
+        <div class="nav_top_w"><a class="nav_top" href="#home"></a></div>
       </main>
 
       <footer class="footer">
