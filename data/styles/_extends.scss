@@ -68,3 +68,16 @@
     padding: 1.6rem 2rem;
     border-radius: 2px;
 }
+
+
+
+%orange_btn {
+    @include btn();
+    @include size(13.6rem, 4.1rem, 1.8rem, 600, 2.11rem);
+    width: 100%;
+    color: $white;
+    background-color: #F9995D;
+    padding: 0 2rem;
+    border-radius: 0.4rem;
+
+}

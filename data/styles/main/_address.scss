@@ -1,0 +1,116 @@
+.section.section--address {
+padding: 8.5rem 0;
+}
+
+.container_address {
+    max-width: 127.6rem;
+    display: flex;
+    // column-gap: 32.3rem;
+    justify-content: space-between;
+    align-items: center;
+
+
+.address_contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.2rem;
+
+
+.cont_address{
+font-size: 20px;
+font-weight: 400;
+line-height: 23.46px;
+text-align: left;
+
+.cont_head{
+font-weight: 500;
+color: $blue;
+    }
+}
+  }
+
+
+
+  .address_moreinfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    max-width: 42.5rem;
+    width: 100%;
+
+
+        .moreinfo_name {
+        font-weight: 500;
+        color: $blue;
+        font-size: 20px;
+        line-height: 23.46px;
+        }
+
+
+        .moreinfo_form{
+            display: flex;
+           flex-wrap: wrap;
+            max-width: 42.4rem;
+            width: 100%;
+            gap: 0.8rem;
+
+
+            .moreinfo_email {
+                max-width: 28rem;
+                width: 100%;
+                min-height: 41px;
+                padding: 0 8px;
+                border-radius: 4px;
+                border: 1px solid #E0E3EB;
+
+                color: #A3AAC2;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 21.11px;
+
+
+
+                &::placeholder {
+                    color: #A3AAC2;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21.11px;
+                    text-align: left;
+                }
+            }
+
+            .moreinfo_btn{
+            @extend %orange_btn
+            }
+        }
+
+
+
+        .moreinfo_social{
+            font-weight: 500;
+            color: $blue;
+            font-size: 20px;
+            line-height: 23.46px;
+        }
+
+        .moreinfo_social__links {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .icon{
+                max-width: 4rem;
+                height: 4rem;
+                display: block;
+                object-fit: contain;
+            }
+        
+        }
+  }
+
+
+
+
+
+
+}
