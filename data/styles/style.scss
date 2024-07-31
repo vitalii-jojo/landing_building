@@ -1,8 +1,8 @@
 @import "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap";
-@import "./reset";
-@import './variables';
-@import './extends';
-@import "./main/base";
+@import "./base/reset";
+@import './base/variables';
+@import './base/extends';
+@import "./base/base";
 @import "./main/header";
 @import "./main/nav_btn";
 @import "./main/hero";
