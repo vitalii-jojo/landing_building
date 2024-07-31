@@ -15,44 +15,49 @@
       <header class="header">
         <div class="container container--header">
           <div class="logo">
-            <div class="logo__cube">
-              <img src="./data/img/Group.svg" alt="group" />
-            </div>
             <div class="logo__box">
               <img src="./data/img/TheBox.svg" alt="box" />
             </div>
           </div>
           <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Projects</a>
-            <a href="#">Services</a>
-            <a href="#">Contact Us</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a class="act" href="#contact">Contact Us</a>
           </div>
         </div>
       </header>
 
       <main class="main">
-        <section class="section section--hero">
+        <section id="home" class="section section--hero">
           <div class="container container--hero">
             <h1 class="hero_title">Building things is our mission.</h1>
             <div class="feature mySwiper">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div>Feature Projects</div>
-                  <div>The National University of Architecture</div>
+                <div class="swiper-slide one">
+                  <div class="feature_title">Feature Projects1</div>
+                  <div class="feature_desc">
+                    The National University of Architecture
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                <div class="swiper-slide one">
+                  <div class="feature_title">Feature Projects2</div>
+                  <div class="feature_desc">
+                    The National University of Architecture
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                <div class="swiper-slide one">
+                  <div class="feature_title">Feature Projects3</div>
+                  <div class="feature_desc">
+                    The National University of Architecture
+                  </div>
                 </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                <div class="swiper-slide one">
+                  <div class="feature_title">Feature Projects4</div>
+                  <div class="feature_desc">
+                    The National University of Architecture
+                  </div>
                 </div>
               </div>
               <div class="nav_wrap">
@@ -92,13 +97,30 @@
           </div>
         </section>
 
-        <section class="section">
+        <section id="about" class="section">
           <div class="container container--about">
-            <h1 class="section_title">About us</h1>
+
+            <div class="about_img_w">
+              <img class="about_img" src="./data/img/87a6fb6a79f6ebda83f9824c72dc2d4b.jpg" alt="men" />
+            </div>
+            <div class="description">
+              <h1 class="desc_title">About us</h1>
+              <div class="desc_text">
+                <p>
+                For more than 30 years we have been delivering world-class
+                construction and we've built many lasting relationships along
+                the way. </p>
+                <p></p>
+                We've matured into an industry leader and trusted resource for
+                those seeking quality, innovation and reliability when building
+                in the U.S.</p>
+              </div>
+              <a class="descr_btn" href="#">More on Our History</a>
+            </div>
           </div>
         </section>
 
-        <section class="section section--services">
+        <section id="services" class="section section--services">
           <div class="container container--services">
             <h1 class="section_title">Services</h1>
             <div class="serv_w">
@@ -118,7 +140,11 @@
               </div>
               <div class="serv_ww">
                 <div class="serv">
-                  <img class="serv__img" src="./data/img/con.svg" alt="mic" />
+                  <img
+                    class="serv__img"
+                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeT0iMTYuNjY2NyIgd2lkdGg9IjIzLjMzMzMiIGhlaWdodD0iMjMuMzMzMyIgZmlsbD0iIzc1OTVGRCIvPgo8cGF0aCBkPSJNMTguMzMzMyAxMEgyMy4zMzMzTDI4LjgxNjcgNC41MDAwMkMyOC45NzE2IDQuMzQzOCAyOS4xNTU5IDQuMjE5ODEgMjkuMzU5IDQuMTM1MkMyOS41NjIxIDQuMDUwNTggMjkuNzggNC4wMDcwMiAzMCA0LjAwNzAyQzMwLjIyIDQuMDA3MDIgMzAuNDM3OSA0LjA1MDU4IDMwLjY0MSA0LjEzNTJDMzAuODQ0MSA0LjIxOTgxIDMxLjAyODQgNC4zNDM4IDMxLjE4MzMgNC41MDAwMkwzNS40ODMzIDguODE2NjhDMzUuNzkzOCA5LjEyODk1IDM1Ljk2OCA5LjU1MTM3IDM1Ljk2OCA5Ljk5MTY4QzM1Ljk2OCAxMC40MzIgMzUuNzkzOCAxMC44NTQ0IDM1LjQ4MzMgMTEuMTY2N0wzMS42NjY3IDE1SDE4LjMzMzNWMTguMzMzM0MxOC4zMzMzIDE4Ljc3NTQgMTguMTU3NyAxOS4xOTkzIDE3Ljg0NTIgMTkuNTExOUMxNy41MzI2IDE5LjgyNDQgMTcuMTA4NyAyMCAxNi42NjY3IDIwQzE2LjIyNDYgMjAgMTUuODAwNyAxOS44MjQ0IDE1LjQ4ODIgMTkuNTExOUMxNS4xNzU2IDE5LjE5OTMgMTUgMTguNzc1NCAxNSAxOC4zMzMzVjEzLjMzMzNDMTUgMTIuNDQ5MyAxNS4zNTEyIDExLjYwMTQgMTUuOTc2MyAxMC45NzYzQzE2LjYwMTQgMTAuMzUxMiAxNy40NDkzIDEwIDE4LjMzMzMgMTBaTTguMzMzMzMgMTguMzMzM1YyNUw0LjUxNjY3IDI4LjgxNjdDNC4yMDYyNSAyOS4xMjkgNC4wMzIwMSAyOS41NTE0IDQuMDMyMDEgMjkuOTkxN0M0LjAzMjAxIDMwLjQzMiA0LjIwNjI1IDMwLjg1NDQgNC41MTY2NyAzMS4xNjY3TDguODE2NjcgMzUuNDgzM0M4Ljk3MTYxIDM1LjYzOTYgOS4xNTU5NCAzNS43NjM2IDkuMzU5MDQgMzUuODQ4MkM5LjU2MjE0IDM1LjkzMjggOS43Nzk5OCAzNS45NzYzIDEwIDM1Ljk3NjNDMTAuMjIgMzUuOTc2MyAxMC40Mzc5IDM1LjkzMjggMTAuNjQxIDM1Ljg0ODJDMTAuODQ0MSAzNS43NjM2IDExLjAyODQgMzUuNjM5NiAxMS4xODMzIDM1LjQ4MzNMMTguMzMzMyAyOC4zMzMzSDI1QzI1LjQ0MiAyOC4zMzMzIDI1Ljg2NTkgMjguMTU3OCAyNi4xNzg1IDI3Ljg0NTJDMjYuNDkxMSAyNy41MzI2IDI2LjY2NjcgMjcuMTA4NyAyNi42NjY3IDI2LjY2NjdWMjVIMjguMzMzM0MyOC43NzU0IDI1IDI5LjE5OTMgMjQuODI0NCAyOS41MTE4IDI0LjUxMTlDMjkuODI0NCAyNC4xOTkzIDMwIDIzLjc3NTQgMzAgMjMuMzMzM1YyMS42NjY3SDMxLjY2NjdDMzIuMTA4NyAyMS42NjY3IDMyLjUzMjYgMjEuNDkxMSAzMi44NDUyIDIxLjE3ODVDMzMuMTU3NyAyMC44NjYgMzMuMzMzMyAyMC40NDIgMzMuMzMzMyAyMFYxOC4zMzMzSDIxLjY2NjdWMjBDMjEuNjY2NyAyMC44ODQxIDIxLjMxNTUgMjEuNzMxOSAyMC42OTA0IDIyLjM1N0MyMC4wNjUyIDIyLjk4MjIgMTkuMjE3NCAyMy4zMzMzIDE4LjMzMzMgMjMuMzMzM0gxNUMxNC4xMTU5IDIzLjMzMzMgMTMuMjY4MSAyMi45ODIyIDEyLjY0MyAyMi4zNTdDMTIuMDE3OSAyMS43MzE5IDExLjY2NjcgMjAuODg0MSAxMS42NjY3IDIwVjE1TDguMzMzMzMgMTguMzMzM1oiIGZpbGw9IiMyOTJFM0QiLz4KPC9zdmc+Cg=="
+                    alt="mic"
+                  />
                   <div class="serv__bord"></div>
                   <h2 class="serv__title">Consultation</h2>
                 </div>
@@ -152,88 +178,259 @@
 
         <section class="section">
           <div class="container container--exp">
-            <h1 class="section_title">30 Years Experience</h1>
+            <div class="exp_highlites">
+              <div class="highlite highlite--1">
+                <div class="high_numb">84</div>
+                <div class="high_text">Happy Clients</div>
+              </div>
+              <div class="highlite highlite--2">
+                <div class="high_numb">123</div>
+                <div class="high_text">Projects Completed</div>
+              </div>
+              <div class="highlite highlite--3">
+                <div class="high_numb">37</div>
+                <div class="high_text">Awards Win</div>
+              </div>
+              <div class="highlite highlite--4">
+                <div class="high_numb">30</div>
+                <div class="high_text">Years in Business</div>
+              </div>
+            </div>
+            <div class="exp_w">
+              <h1 class="exp_title">30 Years Experience</h1>
+              <div class="exp_desc">
+                Our company has been the leading provided construction services
+                to clients throughout the USA since 1988.
+              </div>
+              <a class="exp_btn" href="#">Contact Us</a>
+            </div>
           </div>
         </section>
 
         <section class="section section--cont">
           <div class="container container--cont">
-            <h1 class="section_title section_title--color">
-              Free consultation with exceptional quality
-            </h1>
+            <div class="contact">
+              <h1 class="section_title section_title--color">
+                Free consultation with exceptional quality
+              </h1>
+              <div class="tel">
+                Just one call away: <a href="tel:+8411022703">+84 1102 2703</a>
+              </div>
+            </div>
+            <a href="#" class="contact_btn">Get your consultation</a>
           </div>
         </section>
-        <section class="section">
+        <section id="projects" class="section">
           <div class="container container--projects">
             <h1 class="section_title">Projects</h1>
             <div class="tabs_w tab1">
               <nav class="tabs_nav">
                 <div class="project__btn_w">
-                  <button data-tab="tab_1" class="prg_btn activeb">
-                    Residential
-                  </button>
-                  <button data-tab="tab_2" class="prg_btn">Commercial</button>
-                  <button data-tab="tab_3" class="prg_btn">
-                    Institutional
-                  </button>
-                  <button data-tab="tab_4" class="prg_btn">Residential</button>
+                  <button data-btn class="prg_btn activeb">Residential</button>
+                  <button data-btn class="prg_btn">Commercial</button>
+                  <button data-btn class="prg_btn">Institutional</button>
+                  <button data-btn class="prg_btn">Residential</button>
                 </div>
               </nav>
 
-              <div class="tabs__content">
-                <div
-                  data-tab-content
-                  id="tab_1"
-                  class="tabs__content_item active"
-                >
-                  <div class="img_w">
-                    <img class="img_prg" src="./data/img/1.png" alt="" />
+              <div class="cont_w mySwiper2">
+                <div class="swiper-wrapper">
+                  <div data-tab class="tabs__content swiper-slide">
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/1.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Wildstone Infra Hotel</div>
+                        <div class="itm__text_loc">
+                          2715 Ash Dr. San Jose, South Dakota
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/4.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Oregano Height</div>
+                        <div class="itm__text_loc">
+                          2464 Royal Ln. Mesa, New Jersey
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_ite">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/2.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Wish Stone Building</div>
+                        <div class="itm__text_loc">
+                          2972 Westheimer Rd. Santa Ana, Illinois
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/3.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Mr. Parkinston’s House</div>
+                        <div class="itm__text_loc">
+                          3517 W. Gray St. Utica, Pennsylvania
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="text_w">
-                    <div class="itm__text">Wildstone Infra Hotel</div>
-                    <div class="itm__text_loc">
-                      2715 Ash Dr. San Jose, South Dakota
+                  <div data-tab class="tabs__content swiper-slide">
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/1.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Wildstone Infra Hotel</div>
+                        <div class="itm__text_loc">
+                          2715 Ash Dr. San Jose, South Dakota
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_ite">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/2.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Wish Stone Building</div>
+                        <div class="itm__text_loc">
+                          2972 Westheimer Rd. Santa Ana, Illinois
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/3.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Mr. Parkinston’s House</div>
+                        <div class="itm__text_loc">
+                          3517 W. Gray St. Utica, Pennsylvania
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/4.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Oregano Height</div>
+                        <div class="itm__text_loc">
+                          2464 Royal Ln. Mesa, New Jersey
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-tab class="tabs__content swiper-slide">
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/1.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Wildstone Infra Hotel</div>
+                        <div class="itm__text_loc">
+                          2715 Ash Dr. San Jose, South Dakota
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_ite">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/2.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Wish Stone Building</div>
+                        <div class="itm__text_loc">
+                          2972 Westheimer Rd. Santa Ana, Illinois
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/3.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Mr. Parkinston’s House</div>
+                        <div class="itm__text_loc">
+                          3517 W. Gray St. Utica, Pennsylvania
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/4.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Oregano Height</div>
+                        <div class="itm__text_loc">
+                          2464 Royal Ln. Mesa, New Jersey
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-tab class="tabs__content swiper-slide">
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/1.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Wildstone Infra Hotel</div>
+                        <div class="itm__text_loc">
+                          2715 Ash Dr. San Jose, South Dakota
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_ite">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/2.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Wish Stone Building</div>
+                        <div class="itm__text_loc">
+                          2972 Westheimer Rd. Santa Ana, Illinois
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/3.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Mr. Parkinston’s House</div>
+                        <div class="itm__text_loc">
+                          3517 W. Gray St. Utica, Pennsylvania
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__content_item">
+                      <div class="img_w">
+                        <img class="img_prg" src="./data/img/4.png" alt="" />
+                      </div>
+                      <div class="text_w">
+                        <div class="itm__text">Oregano Height</div>
+                        <div class="itm__text_loc">
+                          2464 Royal Ln. Mesa, New Jersey
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div data-tab-content id="tab_2" class="tabs__content_item">
-                  <div class="img_w">
-                    <img class="img_prg" src="./data/img/2.png" alt="" />
-                  </div>
-                  <div class="text_w">
-                    <div class="itm__text">Wish Stone Building</div>
-                    <div class="itm__text_loc">
-                      2972 Westheimer Rd. Santa Ana, Illinois
-                    </div>
-                  </div>
-                </div>
-                <div data-tab-content id="tab_3" class="tabs__content_item">
-                  <div class="img_w">
-                    <img class="img_prg" src="./data/img/3.png" alt="" />
-                  </div>
-                  <div class="text_w">
-                    <div class="itm__text">Mr. Parkinston’s House</div>
-                    <div class="itm__text_loc">
-                      3517 W. Gray St. Utica, Pennsylvania
-                    </div>
-                  </div>
-                </div>
-                <div data-tab-content id="tab_4" class="tabs__content_item">
-                  <div class="img_w">
-                    <img class="img_prg" src="./data/img/4.png" alt="" />
-                  </div>
-                  <div class="text_w">
-                    <div class="itm__text">Oregano Height</div>
-                    <div class="itm__text_loc">
-                      2464 Royal Ln. Mesa, New Jersey
-                    </div>
-                  </div>
+                <div class="nav_wrap2">
+                  <div class="SwiperBtnPrev">Prev</div>
+                  <div class="Pagination"></div>
+                  <div class="SwiperBtnNext">Next</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="section srction--form">
+
+        <section id="contact" class="section srction--form">
           <div class="container container--form">
             <div class="form__text">
               <h1 class="text__title">What can us do for you?</h1>
@@ -276,23 +473,58 @@
             </form>
           </div>
         </section>
-      </main>
 
-      <footer class="footer">
-        <section class="section">
-          <div class="container container--footer_contact">
-            <div class="footer_contact">
-              <h1 class="section_title">Address:</h1>
+        <section id="add" class="section section--address">
+          <div class="container container_address">
+            <div class="address_contact">
+              <div class="cont_address"><span class="cont_head">Address: </span>6391 Elgin St. Celina, Delaware 10299</div>
+              <div class="cont_address"><span class="cont_head">Phone: </span>+84 1102 2703</div>
+              <div class="cont_address"><span class="cont_head">Email: </span>hello@thebox.com</div>
+              <div class="logo">
+                <div class="logo__box">
+                  <img src="./data/img/TheBox.svg" alt="box" />
+                </div>
+              </div>
+
+            </div>
+
+            <div class="address_moreinfo"> 
+              <div class="moreinfo_name">Newsletter:</div>
+                <form class="moreinfo_form" action="">
+                <input
+                class="moreinfo_email"
+                type="email"
+                placeholder="Your email here"
+                required
+              />
+              <button class="moreinfo_btn">Subscribe</button>
+            </form>
+              <div class="moreinfo_social">Social:</div>
+              <div class="moreinfo_social__links">
+              <a href="#add"> <svg class="icon"> <use href="./data/img/sprite.svg#face"/> </svg> </a>
+              <a href="#add"> <svg class="icon"> <use href="./data/img/sprite.svg#linkedin"/> </svg> </a>
+              <a href="#add"> <svg class="icon"> <use href="./data/img/sprite.svg#twitter"/> </svg> </a>
+
+              </div>
+            
             </div>
           </div>
         </section>
 
+
+
+
+
+
+        <div class="nav_top_w"><a class="nav_top" href="#home"></a></div>
+      </main>
+
+      <footer class="footer">
+
         <section class="section section--footer">
           <div class="container container--footer">
             <div class="footer_last">
-              <p class="last_text">
                 TheBox Company © 2022. All Rights Reserved
-              </p>
             </div>
           </div>
         </section>

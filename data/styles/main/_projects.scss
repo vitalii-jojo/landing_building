@@ -1,0 +1,129 @@
+.container--projects {
+    max-width: 127.6rem;
+  }
+  
+  .tabs_w {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: space-between;
+  }
+  .project__btn_w {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: flex-start;
+  }
+  .prg_btn {
+    font-family: Work Sans;
+    color: #c2c7d6;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 2.81rem;
+    // cursor: none;
+    transition: color 0.5s ease;
+  }
+  .prg_btn.activeb {
+    color: $blue;
+    position: relative;
+  }
+  .prg_btn.activeb::before {
+    background-color: $blue;
+    content: "";
+    width: 5px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: -16px;
+  }
+  /* swiper */
+  
+ .cont_w {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    overflow: hidden;
+    row-gap: 3.2rem;
+ }
+
+  .nav_wrap2 {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 6.4rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .SwiperBtnNext, .SwiperBtnPrev {
+    @extend %navigation_btn2;
+  }
+  .SwiperBtnNext::after {
+    content: url(../../data/img/arrow-next.svg);
+    display: inline-block;
+    width: 2.6rem;
+    height: 1.7rem;
+    position: relative;
+    left: 1rem;
+  }
+  .SwiperBtnPrev::before {
+    content: url(../../data/img/arrow-prev.svg);
+    display: inline-block;
+    width: 2.6rem;
+    height: 1.7rem;
+    position: relative;
+    right: 1rem;
+  }
+  .Pagination {
+    width: auto !important;
+  }
+  .swiper-pagination-bullet {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+  } 
+
+
+
+  /* content tabs */
+  .tabs__content {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .tabs__content_item {
+    max-width: 38.4rem;
+    // width: calc((80% - 32px) / 2);
+  }
+  
+  .img_w {
+    max-width: 38.4rem;
+    width: 100%;
+    display: block;
+  }
+  .text_w {
+    background-color: $blue;
+    color: $white;
+    max-width: 38.4rem;
+    min-height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12px;
+  }
+  .img_prg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .itm__text {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.46px;
+    text-align: left;
+  }
+  .itm__text_loc {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.11px;
+    text-align: left;
+  }

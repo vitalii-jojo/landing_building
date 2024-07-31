@@ -1,0 +1,84 @@
+
+.container--about {
+    max-width: 127.6rem;
+    // position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .about_img_w {
+    display: block;
+    // position: relative;
+    display: block;
+    width: 74%;
+
+    border-radius: 2px;
+    box-shadow:
+      0px 8px 8px -4px #1118270a,
+      0px 20px 24px -4px #1118271a;
+
+      max-width: 100%;
+      width: 90.2rem;
+      height: 67rem;
+
+    .about_img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+
+
+
+  .description {
+    // position: absolute;
+    // top: 7.3rem;
+    // left: 72.6rem;
+    // top: 9%;
+    // left: 60%;
+    width: 38%;
+    margin-left: -12%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 4rem 6rem 4rem;
+
+    max-width: 48.8rem;
+    width: 100%;
+    min-height: 52.3rem;
+
+    color: $white;
+    background-color: $blue;
+
+    .desc_title {
+      padding-bottom: 3.7rem;
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 4.22rem;
+    }
+
+    .desc_text {
+      padding-bottom: 7.4rem;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23.46px;
+      text-align: left;
+
+      p {
+        margin-bottom: 2.8rem;
+      }
+       p:last-child {
+        margin-bottom: 0;
+       }
+
+    }
+
+    .descr_btn {
+      @extend %white_btn;
+    }
+
+  }

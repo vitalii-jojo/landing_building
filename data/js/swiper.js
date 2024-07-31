@@ -1,13 +1,7 @@
-// import Swiper JS
-import Swiper from 'swiper';
-
-    
-    var swiper = new Swiper(".mySwiper", {
+    var swiper1 = new Swiper(".mySwiper", {
       effect: "flip",
       grabCursor: true,
-      pagination: {
-        el: ".swiper-pagination",
-      },
+      loop: true,
       navigation: {
         nextEl: ".feature-next",
         prevEl: ".feature-prev",
