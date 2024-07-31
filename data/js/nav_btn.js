@@ -4,8 +4,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 300 ||
-    document.documentElement.scrollTop > 300
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
   ) {
     document.querySelector(".nav_top").classList.add("visible");
   } else {
