@@ -9,6 +9,25 @@
     min-height: 8rem;
     justify-content: space-between;
   }
+
+  // .nav_btn {
+  //   display: block;
+  //   z-index: 999;
+  //   width: 30px;
+  //   height: 30px;
+  //   position: relative;
+  //   top: 20px;
+  //   left: 20px;
+  //   background-image: url(../../img/burger-list-menu-navigation-svgrepo-com.svg);
+  //   background-color: rgba(255, 255, 255, 0);
+  //   background-position: center;
+  //   background-size: contain;
+  //   border: none;
+  //   cursor: pointer;
+  // }
+
+
+
   .logo {
     display: flex;
     align-items: center;
@@ -26,16 +45,26 @@
     display: block;
   }
   .menu {
-    display: flex;
-    column-gap: 5rem;
+
+    @include bp($point_4, min) {
+      display: flex;
+      column-gap: 5rem;
+      }
+
+      @include bp($point_4, max) {
+        display: none;
+        }
+
+
+
 
     a {
-font-family: Work Sans;
 font-size: 1.8rem;
 font-weight: 400;
 line-height: 2.1rem;
 color: #14171F;
 text-decoration: none;
+text-align: center;
 
       &.act {
         color:#F9995D;
