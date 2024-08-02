@@ -88,20 +88,22 @@
         pointer-events: auto;
         transform: translate(0) scale(1);
       }
-      a {
-        color: $white !important;
+      .links {
+        color: $white;
       }
-
       }
 
     a {
-      
       font-size: 1.8rem;
       font-weight: 400;
       line-height: 2.1rem;
       color: #14171F;
       text-decoration: none;
       text-align: center;
+
+      &:hover {
+        color:#F9995D;
+      }
 
       &.act {
         color:#F9995D;
