@@ -12,3 +12,15 @@ function scrollFunction() {
     document.querySelector(".nav_top").classList.remove("visible");
   }
 }
+
+const btn = document.querySelector(".nav_btn");
+const menu = document.querySelector(".menu")
+btn.addEventListener("click", function(){
+  menu.classList.toggle("active");
+
+  if (menu.classList.contains("active")) {
+    btn.classList.add("act");
+  } else {
+    btn.classList.remove("act");
+  }
+})
