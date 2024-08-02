@@ -63,6 +63,7 @@
       justify-content: space-between;
       max-width: 57.7rem;
       width: 100%;
+      
 
       @include bp($point_4, max) {
         position: fixed;
@@ -79,13 +80,13 @@
         opacity: 0;
         pointer-events: none;
         overflow: auto;
-        transform: translateY(-200%);
+        transform: translate(200%, -100%) scale(-1);
         transition: all 0.3s ease-in-out;
       &.active {
         visibility: visible;
         opacity: 1;
         pointer-events: auto;
-        transform: translateY(0);
+        transform: translate(0) scale(1);
       }
       a {
         color: $white !important;
@@ -93,16 +94,14 @@
 
       }
 
-
-
     a {
       
-font-size: 1.8rem;
-font-weight: 400;
-line-height: 2.1rem;
-color: #14171F;
-text-decoration: none;
-text-align: center;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.1rem;
+      color: #14171F;
+      text-decoration: none;
+      text-align: center;
 
       &.act {
         color:#F9995D;

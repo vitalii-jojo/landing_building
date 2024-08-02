@@ -17,6 +17,10 @@ html {
 .section {
   padding: 10rem 0;
   width: 100%;
+  overflow: hidden;
+  @include bp($point_4, max) {
+    padding: 5rem 0;
+    }
 }
 .container {
   width: 100%;

@@ -5,13 +5,19 @@
   width: 100%;
 }
 .section_title {
-  font-family: Work Sans;
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 4.2rem;
-
   color: #292e3d;
   margin-bottom: 4rem;
+
+  @include bp($point_4, max) {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    margin-bottom: 3rem;
+    }
+  
 }
 .reputations_w {
   width: 100%;
@@ -19,6 +25,12 @@
   column-gap: 7rem;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include bp($point_4, max) {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    }
 }
 .rep {
   display: flex;
@@ -30,6 +42,11 @@
   padding: 20px;
   cursor: pointer;
   width: calc((100% - 2 * 7rem) / 3);
+
+  @include bp($point_4, max) {
+    min-width: 18rem;
+    }
+  
 }
 .rep__img {
   width: 4rem;
