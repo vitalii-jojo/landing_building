@@ -75,12 +75,12 @@
         background-color: $blue;
         border-radius: 20px;
         width: 70dvw;
-        height: 50dvh;
+        height: 45dvh;
         visibility: hidden;
         opacity: 0;
         pointer-events: none;
         overflow: auto;
-        transform: translate(200%, -100%) scale(-1);
+        transform: translate(200%, -200%) scale(-1);
         transition: all 0.3s ease-in-out;
       &.active {
         visibility: visible;

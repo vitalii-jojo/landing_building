@@ -4,6 +4,9 @@
     // position: relative;
     display: flex;
     align-items: center;
+    @include bp($point_4, max) {
+      justify-content: center;
+      }
   }
 
 
@@ -12,6 +15,9 @@
     // position: relative;
     display: block;
     width: 74%;
+    @include bp($point_4, max) {
+      width: 40%;
+      }
 
     border-radius: 2px;
     box-shadow:
@@ -41,6 +47,10 @@
     // left: 60%;
     width: 38%;
     margin-left: -12%;
+    @include bp($point_4, max) {
+      width: 60%;
+      margin-left: -15%;
+      }
 
     display: flex;
     flex-direction: column;
@@ -59,6 +69,7 @@
       font-size: 3.6rem;
       font-weight: 700;
       line-height: 4.22rem;
+      
     }
 
     .desc_text {
@@ -67,9 +78,19 @@
       font-weight: 400;
       line-height: 23.46px;
       text-align: left;
+      
+      @include bp($point_4, max) {
+        padding-bottom: 2.4rem;
+        font-size: 18px;
+        }
 
       p {
         margin-bottom: 2.8rem;
+
+        @include bp($point_4, max) {
+          margin-bottom: 1.8rem;
+          }
+        
       }
        p:last-child {
         margin-bottom: 0;

@@ -1,5 +1,8 @@
 :root {
 font-size: 10px;
+@include bp($point_4, max) {
+  font-size: 7px;
+  }
 }
 
 body,
