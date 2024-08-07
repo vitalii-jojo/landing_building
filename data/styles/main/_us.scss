@@ -4,6 +4,7 @@
     // position: relative;
     display: flex;
     align-items: center;
+
     @include bp($point_4, max) {
       justify-content: center;
       }
@@ -12,9 +13,8 @@
 
   .about_img_w {
     display: block;
-    // position: relative;
-    display: block;
     width: 74%;
+
     @include bp($point_4, max) {
       width: 40%;
       }
@@ -40,13 +40,9 @@
 
 
   .description {
-    // position: absolute;
-    // top: 7.3rem;
-    // left: 72.6rem;
-    // top: 9%;
-    // left: 60%;
     width: 38%;
     margin-left: -12%;
+
     @include bp($point_4, max) {
       width: 60%;
       margin-left: -15%;
