@@ -5,7 +5,7 @@
     background-color: #2947a9;
     border-radius: 50%;
     position: fixed;
-    top: calc(95% - 50px);
+    top: calc(98% - 50px);
     left: calc(98% - 50px);
     z-index: 1;
   
@@ -21,8 +21,8 @@
     &::after{
     content: url(../../data/img/arrow-prev.svg);
     display: inline-block;
-    width: 2.6rem;
-    height: 1.7rem;
+    width: 26px;
+    height: 17px;
     position: relative;
     top: 50%;
     left: 50%; 

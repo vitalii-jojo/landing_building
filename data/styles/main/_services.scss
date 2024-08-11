@@ -12,16 +12,34 @@
     /* width: 100%; */
     display: flex;
     /* column-gap: 98px; */
-    justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     row-gap: 4.8rem;
-    margin-right: -9.8rem;
+    
+    @include bp($point_4, min) {
+      margin-right: -9.8rem;
+      justify-content: space-between;
+    }
+
+    @include bp($point_5, max) {
+      column-gap: 8rem;
+      justify-content: center;
+     }
   }
   .serv_ww {
-    padding-right: 9.8rem;
-    width: calc(100% / 3);
+
+    @include bp($point_4, min) {
+      width: calc(100% / 3);
+      padding-right: 9.8rem;
+    }
+    
+    @include bp($point_5, max) {
+      max-width: 34rem;
+      width: 100%;
+    }
+    
   }
+
   .serv {
     display: flex;
     flex-direction: column;

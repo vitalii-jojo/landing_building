@@ -1,6 +1,10 @@
 :root {
-font-size: 10px;
-@include bp($point_4, max) {
+  
+@include bp($point_4, min) {
+    font-size: 10px;
+  }
+  
+@include bp($point_5, max) {
   font-size: 7px;
   }
 }
@@ -18,17 +22,28 @@ html {
   max-width: 100%;
 }
 .section {
-  padding: 10rem 0;
   width: 100%;
   overflow: hidden;
-  @include bp($point_4, max) {
+
+  @include bp($point_2, min) {
+    padding: 10rem 0;
+  }
+  
+  @include bp($point_3, max) {
     padding: 5rem 0;
     }
 }
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 3rem;
+
+  @include bp($point_2, min) {
+    padding: 0 3rem;
+  }
+  
+  @include bp($point_3, max) {
+    padding: 0 1.5rem;
+    }
 }
 /* MAIN */
 .main {

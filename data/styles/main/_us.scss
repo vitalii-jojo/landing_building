@@ -5,28 +5,29 @@
     display: flex;
     align-items: center;
 
-    @include bp($point_4, max) {
-      justify-content: center;
-      }
+    @include bp($point_5, max) {
+     flex-direction: column;
+    }
+    
   }
-
 
   .about_img_w {
     display: block;
-    width: 74%;
-
-    @include bp($point_4, max) {
-      width: 40%;
-      }
-
     border-radius: 2px;
     box-shadow:
       0px 8px 8px -4px #1118270a,
       0px 20px 24px -4px #1118271a;
-
       max-width: 100%;
       width: 90.2rem;
       height: 67rem;
+      
+      @include bp($point_4, min) {
+        width: 74%;
+      }
+      
+      @include bp($point_5, max) {
+        width: 100%;
+       }
 
     .about_img {
       width: 100%;
@@ -37,28 +38,30 @@
   }
 
 
-
-
   .description {
-    width: 38%;
-    margin-left: -12%;
-
-    @include bp($point_4, max) {
-      width: 60%;
-      margin-left: -15%;
-      }
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 5rem 4rem 6rem 4rem;
-
-    max-width: 48.8rem;
     width: 100%;
     min-height: 52.3rem;
 
     color: $white;
     background-color: $blue;
+
+    @include bp($point_4, min) {
+      width: 38%;
+      margin-left: -12%;
+      max-width: 48.8rem;
+      min-height: 52.3rem;
+    }
+    
+    @include bp($point_5, max) {
+      width: 100%;
+      margin: 0;
+      margin-top: -12%;
+      min-height: 30rem;
+     }
 
     .desc_title {
       padding-bottom: 3.7rem;
