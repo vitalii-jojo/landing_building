@@ -10,16 +10,36 @@
     max-width: 1276px;
     display: flex;
     align-items: center;
+
+    @include bp($point_3, max) {
+      flex-direction: column;
+      row-gap: 2rem;
+    }
+    
   }
 
   .contact {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    
+    @include bp($point_2, min) {
+    align-items: flex-start;
+    row-gap: 3rem;
+    }
+    
+
+    @include bp($point_3, max) {
+      align-items: center;
+      row-gap: 2rem;
+    }
   }
 
   .section_title  {
     &.section_title--color {
     color: $white;
-    margin-bottom: 3rem;
+    margin: 0;
   }
 }
 
