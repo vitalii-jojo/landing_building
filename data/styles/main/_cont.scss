@@ -40,8 +40,17 @@
     &.section_title--color {
     color: $white;
     margin: 0;
+
+    @include bp($point_2, min) {
+      text-align: start;
+      }
+      
+  
+      @include bp($point_3, max) {
+        text-align: center;
+      }
+    }
   }
-}
 
 .tel {
 font-family: Work Sans;
