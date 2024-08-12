@@ -10,8 +10,17 @@
   .project__btn_w {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
     align-items: flex-start;
+    
+    @include bp($point_2, min) {
+      row-gap: 2rem;
+    }
+    
+    @include bp($point_3, max) {
+      row-gap: 1rem;
+    }
+    
+    
   }
   .prg_btn {
     font-family: Work Sans;
@@ -59,16 +68,16 @@
   .SwiperBtnNext::after {
     content: url(../../data/img/arrow-next.svg);
     display: inline-block;
-    width: 2.6rem;
-    height: 1.7rem;
+    width: 26px;
+    height: 17px;
     position: relative;
     left: 1rem;
   }
   .SwiperBtnPrev::before {
     content: url(../../data/img/arrow-prev.svg);
     display: inline-block;
-    width: 2.6rem;
-    height: 1.7rem;
+    width: 26px;
+    height: 17px;
     position: relative;
     right: 1rem;
   }
@@ -86,11 +95,26 @@
   .tabs__content {
     display: flex !important;
     flex-wrap: wrap;
-    gap: 32px;
+
+    @include bp($point_2, min) {
+      gap: 3.2rem;
+    }
+    
+    @include bp($point_3, max) {
+      gap: 1.5rem;
+    }
   }
   .tabs__content_item {
-    max-width: 38.4rem;
-    // width: calc((80% - 32px) / 2);
+    
+    @include bp($point_2, min) {
+      max-width: 38.4rem;
+    }
+    
+    @include bp($point_3, max) {
+      max-width: 16.4rem;
+    }
+    
+    
   }
   
   .img_w {
@@ -98,6 +122,7 @@
     width: 100%;
     display: block;
   }
+
   .text_w {
     background-color: $blue;
     color: $white;
@@ -114,16 +139,34 @@
     display: block;
   }
   .itm__text {
-    font-family: Work Sans;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 23.46px;
     text-align: left;
+
+    @include bp($point_2, min) {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23.46px;
+    }
+    
+    @include bp($point_3, max) {
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 18.46px;
+    }
+    
   }
   .itm__text_loc {
     font-family: Work Sans;
+    text-align: left;
+
+    @include bp($point_2, min) {
     font-size: 18px;
     font-weight: 400;
     line-height: 21.11px;
-    text-align: left;
+    }
+    
+    @include bp($point_3, max) {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 15.11px;
+    }
   }
