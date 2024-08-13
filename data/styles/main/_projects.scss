@@ -83,6 +83,11 @@
   }
   .Pagination {
     width: auto !important;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.3rem;
   }
   .swiper-pagination-bullet {
     max-width: 1.6rem;
@@ -102,6 +107,7 @@
     
     @include bp($point_3, max) {
       gap: 1.5rem;
+      justify-content: space-evenly;
     }
   }
   .tabs__content_item {
@@ -127,11 +133,22 @@
     background-color: $blue;
     color: $white;
     max-width: 38.4rem;
-    min-height: 84px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-left: 12px;
+    
+
+    
+    @include bp($point_2,min) {
+      padding-left: 12px;
+      justify-content: center;
+      min-height: 8.4rem;
+    }
+    @include bp($point_3,max) {
+      padding: 0;
+      justify-content: flex-start;
+      min-height: 13rem;
+    }
+    
   }
   .img_prg {
     width: 100%;
@@ -139,34 +156,35 @@
     display: block;
   }
   .itm__text {
-    text-align: left;
 
     @include bp($point_2, min) {
       font-size: 20px;
       font-weight: 700;
       line-height: 23.46px;
+      text-align: left;
     }
     
     @include bp($point_3, max) {
       font-size: 15px;
       font-weight: 600;
       line-height: 18.46px;
+      text-align: center;
     }
     
   }
   .itm__text_loc {
-    font-family: Work Sans;
-    text-align: left;
 
     @include bp($point_2, min) {
     font-size: 18px;
     font-weight: 400;
     line-height: 21.11px;
+    text-align: left;
     }
     
     @include bp($point_3, max) {
       font-size: 12px;
       font-weight: 300;
       line-height: 15.11px;
+      text-align: center;
     }
   }

@@ -14,12 +14,18 @@ padding: 8.5rem 0;
     display: flex;
     flex-direction: column;
     row-gap: 3.2rem;
+    
+    @include bp($point_3, max) {
+        // width: 50%;
+        flex: 1 1 50%;
+    }
+    
 
 
 .cont_address{
-font-size: 20px;
+font-size: 2rem;
 font-weight: 400;
-line-height: 23.46px;
+line-height: 2.34rem;
 text-align: left;
 
 .cont_head{
@@ -35,15 +41,24 @@ color: $blue;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    max-width: 42.5rem;
-    width: 100%;
+
+    
+    @include bp($point_2, min) {
+        max-width: 42.5rem;
+        width: 100%;
+    }
+    
+    @include bp($point_3, max) {
+        // width: 50%;
+        flex: 1 1 50%;
+    }
 
 
         .moreinfo_name {
         font-weight: 500;
         color: $blue;
-        font-size: 20px;
-        line-height: 23.46px;
+        font-size: 2rem;
+        line-height: 2.34rem;
         }
 
 
@@ -58,23 +73,23 @@ color: $blue;
             .moreinfo_email {
                 max-width: 28rem;
                 width: 100%;
-                min-height: 41px;
-                padding: 0 8px;
-                border-radius: 4px;
+                min-height: 4rem;
+                padding: 0 0.8rem;
+                border-radius: 0.4rem;
                 border: 1px solid #E0E3EB;
 
                 color: #A3AAC2;
-                font-size: 18px;
+                font-size: 1.8rem;
                 font-weight: 400;
-                line-height: 21.11px;
+                line-height: 2.11rem;
 
 
 
                 &::placeholder {
                     color: #A3AAC2;
-                    font-size: 18px;
+                    font-size: 1.8rem;
                     font-weight: 400;
-                    line-height: 21.11px;
+                    line-height: 2.11rem;
                     text-align: left;
                 }
             }
@@ -89,8 +104,8 @@ color: $blue;
         .moreinfo_social{
             font-weight: 500;
             color: $blue;
-            font-size: 20px;
-            line-height: 23.46px;
+            font-size: 2rem;
+            line-height: 2.34rem;
         }
 
         .moreinfo_social__links {
