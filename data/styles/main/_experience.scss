@@ -36,7 +36,7 @@
     min-height: 15.5rem;
     display: block;
     padding: 3rem;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     background-color: $white;
     border: 1px solid #FFFFFF;
     box-shadow: 0px 4px 6px -2px #1118270D, 0px 12px 16px -4px #1118271A;
@@ -170,16 +170,10 @@
     color: $blue;
     padding-bottom: 4rem;
 
-    @include bp($point_2, min) {
-        font-size: 60px;
-        line-height: 70.38px;
-            }
-    
-    @include bp($point_3, max) {
-        font-size: 55px;
-        line-height: 52.38px;
-            }
+    font-size: 6rem;
+    line-height: 7.03rem;
     }
+    
     .exp_desc{
     font-size: 20px;
     font-weight: 400;
