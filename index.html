@@ -20,13 +20,27 @@
               <img src="./data/img/TheBox.svg" alt="box" />
             
           </div>
-          <div class="menu">
-            <a class="links" href="#home">Home</a>
-            <a class="links" href="#about">About Us</a>
-            <a class="links" href="#projects">Projects</a>
-            <a class="links" href="#services">Services</a>
-            <a class="links" class="act" href="#contact">Contact Us</a>
-          </div>
+          <ul class="menu">
+            <li class="links_item"><a class="links" href="#home">Home</a></li>
+            <li class="links_item"><a class="links" href="#about">About Us</a></li>
+            <li class="links_item">
+              <a class="links" href="#projects">Projects</a>
+              <ul class="header__dropdown_item header__dropdown_item1">
+                <li class="dropdown__link"><a href="#">link11</a></li>
+                <li class="dropdown__link">
+                  <a href="#">link22</a>
+                  <ul class="header__dropdown_item header__dropdown_item2">
+                    <li class="dropdown__link"><a href="#">link11</a></li>
+                    <li class="dropdown__link"><a href="#">link22</a></li>
+                    <li class="dropdown__link"><a href="#">link33</a></li>
+                    </ul>
+                  </li>
+                <li class="dropdown__link"><a href="#">link33</a></li>
+                </ul>
+            </li>
+            <li class="links_item"><a class="links" href="#services">Services</a></li>
+            <li class="links_item"><a class="links" class="act" href="#contact">Contact Us</a></li>
+          </ul>
         </div>
       </header>
 
